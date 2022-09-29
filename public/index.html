@@ -1,20 +1,70 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <title>Jumpydoll Spring Boot app</title>
-    </head>
-    <body>
+<head>
+    <title>PhotoHelp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArISX0btCmwwAFYOQPDZwXz9zLTCfUWdo"></script>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
+
+
+
+</head>
+<body>
+    <div class="jumbotron">
         <div class="container">
-            <h2 class="text-center mt-2">Welcome to your new Express app</h2>
-            To start building, check out our quick start guide below:
-            <ul>
-                <li>
-                    <a href="https://jumpydoll.com/docs/quickstart/nodejs" target="_blank" rel="noreferrer noopener">
-                        Quick start guide
-                    </a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>PhotoHelp</h1>
+                    PhotoHelp is a site that helps photgraphers plan for a trip. It provides them with locations, times, and equipment information
+                    so photographers can make the most of their trip. Search below to get started.
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form id="form" class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="term" placeholder="e.g. Yellowstone, Grand Prismatic">
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-lg btn-Primary">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="container" id="loading">
+<h3>Loading...</h3>
+</div>
+
+<div class="container" id="main">
+    <br>
+    <div class="row">
+        <div id="map" class="col-md-8"></div>
+        <div id="stuff" class="col-md-4">
+
         </div>
-    </body>
+    </div>
+    <br>
+    <div id="info">
+        Click on a photo.
+    </div>
+</div>
+<hr>
+<div class="container" id="footer">
+    Built by Brian Liu<br>
+    Copyright 2015
+    <br>
+</div>
+</body>
 </html>

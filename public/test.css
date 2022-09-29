@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 700px;
+}
+
+#stuff {
+    height: 700px;
+    overflow: scroll;
+}
+
+.jumbotron {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#282896,#000064);
+    font-size: 16px;
+}
+
+#submit {
+    background-color: #282896;
+    color:white;
+}
+
+#submit:hover {
+    background-color: #141464;
+    color: white;
+}
+
+#main {
+    min-height: 40%;
+}
+
+#footer {
+    text-align: center;
+    color:darkgray;
+}

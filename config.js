@@ -1,5 +1,4 @@
 const config = {
   basePath: "/photo-planner",
 };
-
-module.exports = config;
+export default config;
